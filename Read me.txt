@@ -1,0 +1,37 @@
+Run these queries in phpMyAdmin to make tables first:
+
+
+CREATE TABLE users (
+`user_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+username varchar(30) ,
+email varchar(50) ,
+password varchar(64) ,
+activation char(32) ,
+activation2 char(32),
+address VARCHAR(100),bank_details VARCHAR(100) 
+);
+
+
+CREATE TABLE forgotpassword(
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_id int(11) not null,
+rkey char(32) not null,
+time int(11) not null,
+status varchar(7) not null
+);
+
+
+
+CREATE TABLE rememberme (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+authentificator1 char(20) ,
+f2authentificator2 char(64) ,
+user_id int(11) ,
+expires datetime 
+);
+
+
+
+CREATE TABLE products(
+id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,pname varchar(20), pprice int(11),partist varchar(30
+),pinfo varchar(100),ptype varchar(20),sold varchar(10),location varchar(60));

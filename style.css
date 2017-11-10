@@ -1,0 +1,243 @@
+/*Style body element by adding image and set it on cover, add font-family*/
+html {
+  height: 100%;
+}
+
+body{
+    font-family: 'Sniglet', cursive;
+    background-color:#FFFFFF; 
+    background: url(images/background.jpg) no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    min-height: 100%;
+}
+
+
+/*Clases for green buttons*/
+.green{
+    background-color: rgba(114,190,35,0.8);   
+}
+
+.green:hover{
+    background-color: rgb(114,190,35);   
+}
+
+/*Clear the defalut decoration*/
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+/*Slide show*/
+#slideshow{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#myCarousel{
+    width: 100%;
+    margin: 0 auto;
+}
+#myCarousel .item img{
+    margin: 0 auto;
+    height: 500px;
+}
+
+/*Introduction*/
+#intro{
+    box-shadow: 0px 10px 5px 0px #333333;
+    background-color: #333333;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+#intro p{
+    font-size: 20px;
+    color: white;
+}
+
+/*Categories*/
+#categories-heading{
+    margin-top: 50px;
+    padding: 5px;
+    box-shadow: 0px 10px 5px 0px #333333;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.category-margin{
+    margin-top: 50px;
+}
+.picture-box{
+    margin-top: 50px;
+    border:1px solid grey;
+    border-radius: 20px;
+    width: 225px;
+    height: 286px;
+    transition: 0.4s;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.picture-box:hover{
+    text-decoration: none;
+    box-shadow: 5px 10px 10px 5px #333333;
+}
+
+.image-box{
+    height : 285px;
+    width: auto;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.image-title{
+    position: absolute;
+    bottom: -10px;;
+    padding-top: 5px;
+    background-color:black;
+    color:white;
+    width:225px;
+    height:35px;
+    text-align: center;
+}
+
+/*Profile Page*/
+tr{
+    cursor: pointer;    
+}
+.table{
+    background-color: #333333;
+    color: white;
+    margin-top: 50px;
+}
+
+.division{
+    margin-top: 50px;
+    padding: 5px;
+    box-shadow: 0px 10px 5px 0px #333333;   
+    background-color: #333333;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.division p{
+    font-size: 20px;
+    color: white;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+    color: black;
+}
+
+/*Sell Page*/
+#sell-info{
+    margin-top: 100px;
+    background-color: #333333;
+    height: 500px;
+    width: 80%;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+#sell-info h1{
+    font-size: 35px;
+    color: white;
+}
+
+#sell-info p{
+    font-size: 25px;
+    color: white;
+}
+
+/*Footer*/
+#footer{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    width: 100%;  
+}
+
+/*Spinner*/
+#spinner{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 100000;
+    display: none;
+}
+/*Style the pictures and nav-brand for different screens*/
+
+@media(max-width:1400px){
+    #myCarousel .item img{
+        height: 450px;
+    }
+}
+
+
+@media(max-width:768px){
+    #slideshow{
+        margin-bottom: 75px;
+    }
+    #myCarousel .item img{
+        height: 250px;
+    }
+    #categories-heading{
+        font-size: 25px
+    }
+    #intro h1{
+        font-size: 25px
+    }
+    #intro p{
+        font-size: 16px;
+        text-align: justify;
+    }
+    .division h1{
+        font-size: 25px
+    }
+    .division p{
+        font-size: 16px;
+    }
+    #sell-info h1{
+        font-size: 25px;
+    }
+    #sell-info p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:400px){
+    #slideshow{
+        margin-bottom: 50px;
+    }
+    #myCarousel .item img{
+        height: 160px;
+    }
+}
+

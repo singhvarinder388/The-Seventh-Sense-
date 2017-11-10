@@ -1,0 +1,72 @@
+.product-frame{
+    box-shadow: 0px 10px 5px 0px #333333;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding:2%;
+    margin:60px 2% 2% 2%;
+}
+
+.product-picture{
+    margin: 0 auto;
+    height:auto;
+    width: 100%; 
+    display: inline-block;
+}
+
+.detail-frame{
+    padding: 5% 0% 0% 3%;
+}
+
+.pname{
+    font-size:45px;
+    color:black; 
+    text-align:left;
+}
+
+.pprice{
+    font-size:30px;
+    color:black; 
+    text-align: left;
+}
+
+.pdescription{
+    font-size:20px;
+    color:black; 
+    text-align: left;
+}
+
+.pbuttons{
+    display: inline-block;
+    color:black; 
+    height:50px; 
+    width:100%;
+}
+
+    /* Font sizes for different devices*/
+  /* Small devices */
+  @media(max-width:768px){
+      .pname{
+        font-size:30px;
+      }
+      .pprice{
+        font-size:20px;
+      }
+
+      .pdescription{
+        font-size:16px;
+      }
+    
+}
+@media (min-width:768px) and (max-width:992px){
+      .pname{
+        font-size:35px;
+      }
+      .pprice{
+        font-size:25px;
+      }
+
+      .pdescription{
+        font-size:16px;
+      }
+    
+}

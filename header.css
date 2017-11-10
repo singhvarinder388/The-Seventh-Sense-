@@ -1,0 +1,246 @@
+/*header styling*/
+
+#header{
+    background-color: #231F20;
+    color: white;
+    height:100px;
+    box-shadow: 0px 10px 5px 0px #333333;
+}
+
+#slogan{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+#logo{
+    height: 100px;
+    width: auto;
+/*    display: none;*/
+}
+
+.menu{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-top: 60px;
+    text-align:center;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 0px;
+}
+
+.menu li{
+    display:inline;
+}
+.menu a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    transition: 0.4s;
+    color: white;
+}
+.menu a:hover{
+    color: white;
+    box-shadow: 0px 5px 0px 0px  #F5F5F5;
+    font-weight: bold;
+}
+
+.header-mobile{
+    display: none;
+}
+
+
+/* Font sizes for different devices*/
+/* Small devices (landscape phones, 544px and up) */
+    
+@media (min-width: 480px) 
+{  
+    
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) 
+{
+     #header{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+    }
+    #categories-heading{
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 880px)  
+{
+    #header{
+        height:80px;
+        box-shadow: 0px 0px 5px 0px #333333;
+    }
+    #logo{
+        height: 50px;
+        width: auto;
+        margin-top: 10px;
+    }
+    .menu{
+        font-size: 10px;
+        margin-top: 40px;
+    }
+    #slogan{
+        font-size: 30px;
+    }
+    .login,.signup{
+        font-size: 8px;
+        color: white;
+    }
+    
+}
+
+@media (min-width: 880px) and (max-width: 1000px)  
+{ 
+    #logo{
+        height: 60px;
+        width: auto;
+        margin-top: 20px;
+    }
+    .menu{
+        font-size: 12px;
+        margin-top: 50px;
+    }
+    #slogan{
+        font-size: 30px;
+    }
+    .login,.signup{
+        font-size: 10px;
+    }
+    #header{
+        box-shadow: 0px 0px 5px 0px #333333;
+    }
+}
+ 
+@media (min-width:1000px) and (max-width: 1200px) 
+{
+    #logo{
+        height: 70px;;
+        width: auto;
+        margin-top: 15px;
+    }
+    .menu{
+        font-size: 14px;
+    }
+    #slogan{
+        font-size: 40px;
+    }
+    .login,.signup{
+        font-size: 12px;
+    }
+    #header{
+        box-shadow: 0px 0px 5px 0px #333333;
+    }
+}
+#footer{
+    text-align: center;
+}
+.navbar-custom,#footer {
+  background-color: #231f20;
+  color: white;
+  border-color: #110f10;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#3e3739), to(#231f20));
+  background-image: -webkit-linear-gradient(top, #3e3739, 0%, #231f20, 100%);
+  background-image: -moz-linear-gradient(top, #3e3739 0%, #231f20 100%);
+  background-image: linear-gradient(to bottom, #3e3739 0%, #231f20 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3e3739', endColorstr='#ff231f20', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #110f10;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  border-left: 1px solid #110f10;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #110f10;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#110f10), to(#2c2729));
+  background-image: -webkit-linear-gradient(top, #110f10, 0%, #2c2729, 100%);
+  background-image: -moz-linear-gradient(top, #110f10 0%, #2c2729 100%);
+  background-image: linear-gradient(to bottom, #110f10 0%, #2c2729 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff110f10', endColorstr='#ff2c2729', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: white;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #100e0f;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #110f10;
+  color: white;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #231f20;
+  border-bottom-color: #231f20;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.dropdown-menu >li >a{
+    color: whitesmoke;
+    text-align: center;
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: white;
+}
